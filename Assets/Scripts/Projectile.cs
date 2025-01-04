@@ -8,6 +8,10 @@ public class Projectile : MonoBehaviour
     // Variables
     private Vector3 _playerPosition;
 
+    private void Awake() {
+        gameObject.SetActive(false);
+    }
+
     private void Start() {
         _playerPosition = _playerTransform.position;            
     }

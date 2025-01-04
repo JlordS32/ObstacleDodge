@@ -13,6 +13,7 @@ public class Dropper : MonoBehaviour
     {
         _body = GetComponent<Rigidbody>();
         _renderer = GetComponent<MeshRenderer>();
+        _renderer.enabled = false;
     }
 
     private void Update()
